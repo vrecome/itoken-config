@@ -69,4 +69,19 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+                <id>nexus</id>
+                <name>Nexus Repository</name>
+                <url>http://192.168.74.128:8081/repository/maven-public/</url>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+        </repository>
+
+    </repositories>
 </project>
