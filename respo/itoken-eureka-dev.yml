@@ -11,13 +11,11 @@ server:
   port: 8761
 
 eureka:
-  instance:
-    hostname: 192.168.74.128
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:8760/eureka/,http://${eureka.instance.hostname}:8761/eureka/
+      defaultZone: http://192.168.74.128:8760/eureka/,http://192.168.74.128:8761/eureka/
 
 management:
   endpoint:
